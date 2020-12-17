@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<title>Home Second Draft</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2{
+  text-align: center;
+}
+
+/* Style the header */
+.header {
+  background-image: url("TestI.jpg");
+  padding: 100px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #43515b;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: gold;
+  color: black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 10px;
+}
+
+.pagebreak{
+
+  padding: 1px;
+  background-color: #af0e1c;
+  color: white;
+  font-family: "Georgia", serif;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer{
+  background-color: #43515b;
+  text-align: center;
+  padding: 10px;
+  height: 155px;
+
+}
+
+
+
+
+#flyouts {
+  float: right;
+  list-style: none;
+  width: 200px;
+  position: relative;
+  margin: 0 0 40px 0; 
+}
+
+#flyouts li {
+  position: relative; 
+  width: 100%;
+}
+
+#flyouts li span {
+  position: relative;
+  padding: 20px;
+  display: block;
+  z-index: 20; 
+  background: white; 
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease;
+}
+
+#flyouts li:nth-child(1) span { background: hsla(185,20%,40%,1); }
+#flyouts li:nth-child(2) span { background: hsla(185,20%,45%,1); }
+#flyouts li:nth-child(3) span { background: hsla(185,20%,50%,1); }
+
+#flyouts li a {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  text-decoration: none; 
+  -webkit-transition: margin 0.2s ease;
+  padding: 5px;
+  background: hsla(185,20%,30%,1);
+  top: 15px;
+  color: white;
+  white-space: nowrap;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 12px;
+}
+
+#flyouts li span:hover {
+  right: -5px;
+}
+
+#flyouts li:hover a {
+  margin: 0 0 0 -175px;
+}
+
+#fluid-wrap {
+  width: 70%; 
+  margin: 0 auto 60px;
+  padding: 20px;
+  background: #eee;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+
+<div class="header">
+  <h1>Header</h1>
+  
+</div>
+
+<div class="topnav sticky">
+  <a href="HomeSecondDraft.html">Home</a>
+  <a href="3946ASecondDraft.html">3946A</a>
+  <a href="3946ESecondDraft.html">3946E</a>
+  <a href="3946XSecondDraft.html">3946X</a>
+  <a href="3946WSecondDraft.html">3946W</a>
+  <a href="HistorySecondDraft.html">History</a>
+  <a href="ResourcesSecondDraft.html">Resources</a>
+</div>
+
+<div class = "pagebreak">
+  <p>&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;Kent Denver Robotics<p>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Upcoming Events or Photos</h2>
+    <p>I have not decided</p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Main Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+  </div>
+  
+  <div class="column side">
+    <h2>News</h2>
+    <p>I plan to put updates on previous tournaments or any new</p>
+  </div>
+</div>
+
+<div class = "footer column side">
+  <img src = "footer.png" width="367" height="135">
+</div>
+<div class = "footer">
+<ul id="flyouts">
+<li><span>Chris Coyier</span> <a href="mailto:chriscoyier@gmail.com">Email ⇒ chriscoyier@gmail.com</a></li>
+<li><span>Elisabeth Moss</span> <a href="mailto:isuredo@likeher.com">Email ⇒ isuredo@likeher.com</a></li>
+<li><span>Amanda Righetti</span> <a href="mailto:marry@me.com">Email ⇒ marry@me.com</a></li>
+</ul>
+</div>
+
+  
+</body>
+</html>
